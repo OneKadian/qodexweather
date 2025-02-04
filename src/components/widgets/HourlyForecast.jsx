@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { BiTime } from "react-icons/bi";
 import WeatherIcon from "../common/WeatherIcon";
-import { useGetHourlyForecastQuery } from "../../services/WeatherAPI";
+import { useGetHourlyForecastQuery } from "../../services/WeatherApi";
 
 function HourlyForecast() {
   const { lat, lng } = useSelector((state) => state.geolocation.geolocation);

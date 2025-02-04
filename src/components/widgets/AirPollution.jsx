@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { GiAbstract053 } from "react-icons/gi";
-import { useGetCurrentAirPollutionQuery } from "../../services/WeatherAPI";
+import { useGetCurrentAirPollutionQuery } from "../../services/WeatherApi";
 
 function AirPollution() {
   //   Access to RTX Query cashed data

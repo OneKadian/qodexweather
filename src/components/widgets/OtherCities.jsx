@@ -1,4 +1,4 @@
-import { useGetCurrentWeatherQuery } from "../../services/WeatherAPI";
+import { useGetCurrentWeatherQuery } from "../../services/WeatherApi";
 import { saveGeoCode } from "../../features/geolocation/geolocationSlice";
 
 import { useDispatch } from "react-redux";

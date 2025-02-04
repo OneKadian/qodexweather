@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { useGetHourlyForecastQuery } from "../../services/WeatherAPI";
+import { useGetHourlyForecastQuery } from "../../services/WeatherApi";
 import { useSelector } from "react-redux";
 import { IoRainy } from "react-icons/io5";
 import Chart, { BarController } from "chart.js/auto";
