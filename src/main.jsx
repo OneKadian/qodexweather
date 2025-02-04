@@ -9,32 +9,28 @@ import "./index.css";
 const Home = lazy(() => import("./routes/Home"));
 const Forecast = lazy(() => import("./routes/Forecast"));
 
-const router = createBrowserRouter(
-  [
-    {
-      path: "/", // Change from "/weather-app-vite"
-      element: (
-        <Suspense fallback={<div className="hidden">Loading...</div>}>
-          <App />
-        </Suspense>
-      ),
-      children: [
-        { index: true, element: <Home /> },
-        {
-          path: "forecast",
-          element: <Forecast />,
-        },
-      ],
-    },
-    {
-      path: "*",
-      element: <div>Not Found</div>,
-    },
-  ],
+const router = createBrowserRouter([
   {
-    basename: "/weather-app-vite", // Add basename here
-  }
-);
+    path: "/weather-app-vite",
+    element: (
+      <Suspense fallback={<div className="hidden">Loading...</div>}>
+        <App />
+      </Suspense>
+    ),
+
+    children: [
+      { index: true, element: <Home /> },
+      {
+        path: "forecast",
+        element: <Forecast />,
+      },
+    ],
+  },
+  {
+    path: "*",
+    element: <div>Not Found</div>,
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
