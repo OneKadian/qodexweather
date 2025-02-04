@@ -2,10 +2,10 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 
 export default defineConfig({
-  base: "./", // Use relative path
+  base: "/", // Change from "./" to "/"
   plugins: [react()],
   build: {
-    outDir: "dist", // Explicitly set output directory
+    outDir: "dist",
     rollupOptions: {
       output: {
         manualChunks(id) {
