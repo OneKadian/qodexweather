@@ -1,6 +1,7 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-const APIKey = import.meta.env.VITE_API_KEY_OPENWEATHERMAP;
+// const APIKey = import.meta.env.VITE_API_KEY_OPENWEATHERMAP;
+const APIKey = "39695d87b59128bb19093c54c3685d3f";
 
 export const weatherApi = createApi({
   reducerPath: "weatherApi",
